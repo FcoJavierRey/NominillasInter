@@ -19,7 +19,7 @@ export class LoginElements {
   }
 
   static get invalidUser() {
-    return cy.contains('p', 'Credenciales inválidas. ');
+    return cy.contains('p', 'El usuario introducido no pertenece al perfil o funcionalidad especificada');
   }
 
 }

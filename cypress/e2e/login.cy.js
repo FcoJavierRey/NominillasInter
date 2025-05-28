@@ -4,7 +4,7 @@ import { LoginMethods } from "./pages/login/login.methods";
 import { NominillasInterMethods } from "./Pages/NominillasInterPage/NominillasInter-page.methods";
 import { Logger } from "./util/logger";
 
-describe('NominillasInter: Usuario no pertenece a funcionalidad', ()=>{
+describe('NominillasInter: Login de usuario', ()=>{
     it('Login de usuario'), (username, password)=>{
             Logger.stepNumber(1);
             Logger.step("Navegar a la página de inicio de sesión");
@@ -20,7 +20,7 @@ describe('NominillasInter: Usuario no pertenece a funcionalidad', ()=>{
             LoginMethods.clickOnLoginButton();
            
             Logger.stepNumber(4); 
-            Logger.subStep("Comprobar que muestra pantalla Usuario no pertenece a funcionalidad");  
+            Logger.subStep("Comprobar que muestra pantalla NominillasInter");  
             NominillasInterMethods.verifyPermisos();
     }
 })
