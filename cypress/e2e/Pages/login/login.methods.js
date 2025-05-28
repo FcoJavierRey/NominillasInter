@@ -26,6 +26,10 @@ export class LoginMethods{
 
     static verifyAlert() {
     LoginElements.invalidUser.should('exist');
+    }
+
+    static verifyUser() {
+    LoginElements.validUser.should('exist');
    
   }
   

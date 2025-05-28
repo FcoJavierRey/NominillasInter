@@ -12,16 +12,28 @@ static navigateToAutenticarOk() {
     cy.visit(NominillasInterData.url);
  } 
 
-static clicOnNominilla() {
-    NominillasInterElements.Menu.Nominillas.click();
+static navigateToRevisionOk() {
+      cy.url().should('include',NominillasInterData.urlRevision);
+   } 
+
+static navigateToCambioIBANOk() {
+      cy.url().should('include',NominillasInterData.urlCambioIBAN);
+   } 
+
+static navigateToCertificadoOk() {
+      cy.url().should('include',NominillasInterData.urlCertificado);
+   } 
+
+static clicOnActualizaDatos() {
+    NominillasInterElements.Menu.ActualizaDatos.click();
   }
 
-  static clicOnCertificados() {
-    NominillasInterElements.Menu.CertificadosRenta.click();
+  static clicOnCambioIBAN() {
+    NominillasInterElements.Menu.CambioIBAN.click();
   }
 
-  static clicOnRetenciones() {
-    NominillasInterElements.Menu.CertificadosRenta.click();
+  static clicOnVerRetenciones() {
+    NominillasInterElements.Menu.VerRetenciones.click();
   }
  static verifySignedUser(username) {
     NominillasInterElements.signedUser.should('exist');

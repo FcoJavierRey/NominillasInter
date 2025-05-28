@@ -22,5 +22,8 @@ export class LoginElements {
     return cy.contains('p', 'El usuario introducido no pertenece al perfil o funcionalidad especificada');
   }
 
+   static get validUser() {
+    return cy.contains('td', 'Consulta de Nóminas e IRPF');
+  }  
 }
 

@@ -1,5 +1,5 @@
 describe('template spec', () => {
   it('passes', () => {
-    cy.visit('https://www3-pre.gobiernodecanarias.org/educacion/cau_ce/cas/login')
+    cy.visit('https://wwwpre.educacion.org/educacion/certificados/nominillasinter/scripts/nominillas.asp')
   })
 })

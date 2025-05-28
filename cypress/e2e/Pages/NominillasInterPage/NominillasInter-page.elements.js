@@ -1,13 +1,18 @@
 export class NominillasInterElements {
   static get Menu() {
     return {
-      get  Nominillas() {
-           return cy.contains('font', 'Nominillas');
+      get  ActualizaDatos() {
+           return cy.contains('a', 'Consulta y actualización de datos');
         
       },
 
-       get  CertificadosRenta() {
-        return cy.contains('font', 'Certificados de la Renta');
+       get  CambioIBAN() {
+        return cy.contains('a', 'Modelo de solicitud de cambio de IBAN');
+        
+      },
+
+      get  VerRetenciones() {
+        return cy.get('input[value="Ver Retenciones"]');
         
       },
            
