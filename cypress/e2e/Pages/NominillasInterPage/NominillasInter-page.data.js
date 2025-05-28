@@ -16,8 +16,14 @@ static get urlCertificado() {
     return "https://wwwpre.educacion.org/educacion/Certificados/NominillasInter/Scripts/Imprimir2.asp";
   };
 
+static get urlNominilla() {
+    return "https://wwwpre.educacion.org/educacion/Certificados/NominillasInter/Scripts/imprimir2.asp";
+  };
 
-  
+static get urlNominillaAnterior() {
+    return "https://wwwpre.educacion.org/educacion/Certificados/NominillasInter/Scripts/opciones.asp";
+};
+ 
   static get testSuites() {
     return {
       registro: "Registro",

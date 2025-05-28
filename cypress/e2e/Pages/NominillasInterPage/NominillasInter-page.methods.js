@@ -24,6 +24,15 @@ static navigateToCertificadoOk() {
       cy.url().should('include',NominillasInterData.urlCertificado);
    } 
 
+static navigateToNominillaOk() {
+      cy.url().should('include',NominillasInterData.urlNominilla);
+   } 
+
+static navigateToNominillaAnteriorOk() {
+      NominillasInterElements.VerNominillaAnterior.should('exist');
+   } 
+  
+
 static clicOnActualizaDatos() {
     NominillasInterElements.Menu.ActualizaDatos.click();
   }
@@ -35,7 +44,16 @@ static clicOnActualizaDatos() {
   static clicOnVerRetenciones() {
     NominillasInterElements.Menu.VerRetenciones.click();
   }
- static verifySignedUser(username) {
+
+  static clicOnVerNominilla() {
+    NominillasInterElements.Menu.VerNominilla.click();
+  }
+
+   static clicOnSeleccionarMes() {
+    NominillasInterElements.Menu.SeleccionarMes.click();
+  }
+
+  static verifySignedUser(username) {
     NominillasInterElements.signedUser.should('exist');
   }  
 
