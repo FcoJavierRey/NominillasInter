@@ -12,17 +12,12 @@ describe(NominillasInterData.testSuites.CambioDireccion, () => {
     NominillasInterMethods.navigateToNominillasInter();
     
     Logger.stepNumber(2);
-    Logger.step("Ingresar un nombre de usuario autorizado");
-    LoginMethods.insertUsername(LoginData.validCredentials.username);
-    LoginMethods.insertPassword(LoginData.validCredentials.password);
-
-    Logger.stepNumber(3);
-    Logger.step('Hacer clic en "Conectar" para iniciar sesión');
-    LoginMethods.clickOnLoginButton();
+    Logger.step("Iniciar Sesión en NominillasInter");
+    LoginMethods.login(LoginData.validCredentials.username, LoginData.validCredentials.password);
     Logger.verification("Verificar que se muestra la página de Consulta de Nóminas e IRPF");
     LoginMethods.verifyUser();
 
-    Logger.stepNumber(4);
+    Logger.stepNumber(3);
     Logger.step("Hacer clic en enlace Solicitar el cambio");
     NominillasInterMethods.clicOnSolicitarCambio();
     Logger.verification("Verificar que se muestra la página de Solicitar Cambio");

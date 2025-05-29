@@ -16,11 +16,11 @@ export class LoginMethods{
     }
 
     static login(username, password){
-        Logger.subStep('Insert username')
+        Logger.subStep('Introducir usuario')
         this.insertUsername(username)
-        Logger.subStep('Insert password')
+        Logger.subStep('Introducir contraseña')
         this.insertPassword(password)
-        Logger.subStep('Click on Login button')
+        Logger.subStep('Hacer click en botón Conectar')
         this.clickOnLoginButton()
     }
 
