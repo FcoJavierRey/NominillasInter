@@ -13,7 +13,7 @@ describe(NominillasInterData.testSuites.RevisionNominillas, () => {
 
     Logger.stepNumber(2);
     Logger.step("Iniciar Sesión en NominillasInter");
-    LoginMethods.login(LoginData.validCredentials.username, LoginData.validCredentials.password )
+    LoginMethods.login(LoginData.validCredentials.username, LoginData.validCredentials.password );
     Logger.verification("Verificar que se muestra la página de Consulta de Nóminas e IRPF");
     LoginMethods.verifyUser();
 
@@ -32,7 +32,7 @@ describe(NominillasInterData.testSuites.RevisionNominillas, () => {
     
     Logger.stepNumber(2);
     Logger.step("Iniciar Sesión en NominillasInter");
-    LoginMethods.login(LoginData.validCredentials.username, LoginData.validCredentials.password )
+    LoginMethods.login(LoginData.validCredentials.username, LoginData.validCredentials.password);
     Logger.verification("Verificar que se muestra la página de Consulta de Nóminas e IRPF");
     LoginMethods.verifyUser();
 
