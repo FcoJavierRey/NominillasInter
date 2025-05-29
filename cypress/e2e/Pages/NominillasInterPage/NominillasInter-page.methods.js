@@ -31,6 +31,14 @@ static navigateToNominillaOk() {
 static navigateToNominillaAnteriorOk() {
       NominillasInterElements.VerNominillaAnterior.should('exist');
    } 
+
+static navigateToCambioDireccionOk() {
+      cy.url().should('include',NominillasInterData.urlRevision);
+   } 
+
+static navigateToResidenciaHabitual() {
+      cy.url().should('include',NominillasInterData.urlRevision);
+   } 
   
 
 static clicOnActualizaDatos() {
@@ -51,6 +59,14 @@ static clicOnActualizaDatos() {
 
    static clicOnSeleccionarMes() {
     NominillasInterElements.Menu.SeleccionarMes.click();
+  }
+
+  static clicOnSolicitarCambio() {
+    NominillasInterElements.Menu.SolicitarCambio.click();
+  }
+
+  static clicOnAccederDeclaracion() {
+    NominillasInterElements.Menu.AccederDeclaracion.click();
   }
 
   static verifySignedUser(username) {

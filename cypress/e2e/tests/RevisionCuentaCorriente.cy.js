@@ -29,6 +29,7 @@ describe(NominillasInterData.testSuites.RevisionNominillas, () => {
     NominillasInterMethods.navigateToRevisionOk()
   });
 
+  
   it("Seleccionar Modelo de solicitud de cambio de IBAN", () => {
    Logger.stepNumber(1);
     Logger.step("Navegar a la página de inicio");

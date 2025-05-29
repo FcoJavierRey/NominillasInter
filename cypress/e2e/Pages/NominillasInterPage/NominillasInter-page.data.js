@@ -24,7 +24,7 @@ static get urlNominillaAnterior() {
     return "https://wwwpre.educacion.org/educacion/Certificados/NominillasInter/Scripts/opciones.asp";
 };
  
-  static get testSuites() {
+static get testSuites() {
     return {
       registro: "Registro",
       autenticacion: "NominillasInter: Autenticación",

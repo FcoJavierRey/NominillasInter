@@ -21,6 +21,13 @@ export class NominillasInterElements {
         return cy.get('input[value="Seleccionar mes"]');
        },
        
+       get  SolicitarCambio() {
+        return cy.contains('a', 'Solicitar el cambio');
+       },
+
+       get  AccederDeclaracion() {
+        return cy.contains('a', 'Acceder a la declaración');
+       },
     };
   }
   
